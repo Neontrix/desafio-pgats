@@ -4,6 +4,7 @@ Este projeto foi desenvolvido como parte de um desafio de automação, com foco 
 
 ## 📂 Estrutura do Projeto
 
+```text
 DESAFIO-PGATS/
 ├── src/
 │   └── usuarios.js        # Dados dos usuários e função de login
