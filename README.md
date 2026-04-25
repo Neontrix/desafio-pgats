@@ -13,7 +13,7 @@ DESAFIO-PGATS/
 ├── package.json           # Configuração do projeto e dependências
 ├── package-lock.json
 └── node_modules/
-
+```
 
 ## 🚀 Tecnologias Utilizadas
 - **Node.js** (v18+ ou superior)
