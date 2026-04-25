@@ -1,0 +1,157 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-04-25T23:38:24.952Z",
+    "end": "2026-04-25T23:38:24.956Z",
+    "duration": 4,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8f3a6d3c-b903-4058-9e82-e206812e66f1",
+      "title": "",
+      "fullFile": "C:\\Users\\pulga\\OneDrive\\Documentos\\projetos-automação\\desafio-pgats\\test\\usuarios.test.js",
+      "file": "\\test\\usuarios.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "70baa98a-56b4-401c-ae5c-b7ef9baa2217",
+          "title": "Testes de Login",
+          "fullFile": "C:\\Users\\pulga\\OneDrive\\Documentos\\projetos-automação\\desafio-pgats\\test\\usuarios.test.js",
+          "file": "\\test\\usuarios.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve realizar login com sucesso",
+              "fullTitle": "Testes de Login Deve realizar login com sucesso",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const resultado = fazerLogin('joao.silva@teste.com', '123456');\nassert.equal(resultado, 'Login realizado com sucesso!');",
+              "err": {},
+              "uuid": "553edbc8-8a6d-4220-ae09-d776c0f48f08",
+              "parentUUID": "70baa98a-56b4-401c-ae5c-b7ef9baa2217",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve exibir mensagem de credenciais expiradas",
+              "fullTitle": "Testes de Login Deve exibir mensagem de credenciais expiradas",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "assert.throws(\n            function(){ fazerLogin('maria.oliveira@teste.com', '654321') },\n            {\n                message: 'As credenciais estão expiradas!'\n            }\n        );",
+              "err": {},
+              "uuid": "7d8a427e-9646-4bc6-854f-019d35e08b9c",
+              "parentUUID": "70baa98a-56b4-401c-ae5c-b7ef9baa2217",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve exibir mensagem de usuário não encontrado",
+              "fullTitle": "Testes de Login Deve exibir mensagem de usuário não encontrado",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "assert.throws(\n    function(){ fazerLogin('usuario.inexistente@teste.com', '123456') },\n    {\n        message: 'Usuário não encontrado!'\n    }\n);",
+              "err": {},
+              "uuid": "0ec875be-76d4-47fb-8453-d3dfdb45a302",
+              "parentUUID": "70baa98a-56b4-401c-ae5c-b7ef9baa2217",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve exibir mensagem de senha incorreta",
+              "fullTitle": "Testes de Login Deve exibir mensagem de senha incorreta",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "assert.throws(\n    function(){ fazerLogin('joao.silva@teste.com', 'senhaIncorreta') },\n    {\n        message: 'Senha incorreta para o usuário encontrado!'\n    }\n);",
+              "err": {},
+              "uuid": "6e401796-6ba1-4683-aba2-dc7b31ac7986",
+              "parentUUID": "70baa98a-56b4-401c-ae5c-b7ef9baa2217",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "553edbc8-8a6d-4220-ae09-d776c0f48f08",
+            "7d8a427e-9646-4bc6-854f-019d35e08b9c",
+            "0ec875be-76d4-47fb-8453-d3dfdb45a302",
+            "6e401796-6ba1-4683-aba2-dc7b31ac7986"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.7.5"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.3.2"
+    }
+  }
+}
