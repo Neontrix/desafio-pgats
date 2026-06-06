@@ -5,9 +5,9 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2026-04-25T23:38:24.952Z",
-    "end": "2026-04-25T23:38:24.956Z",
-    "duration": 4,
+    "start": "2026-06-06T19:45:52.082Z",
+    "end": "2026-06-06T19:45:52.087Z",
+    "duration": 5,
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,18 +18,18 @@
   },
   "results": [
     {
-      "uuid": "8f3a6d3c-b903-4058-9e82-e206812e66f1",
+      "uuid": "5a8097c3-0136-4095-b492-774e494c060b",
       "title": "",
-      "fullFile": "C:\\Users\\pulga\\OneDrive\\Documentos\\projetos-automação\\desafio-pgats\\test\\usuarios.test.js",
+      "fullFile": "D:\\projects\\04 - Integração Contínua\\trabalho_conclusao_pipeline\\desafio-pgats\\test\\usuarios.test.js",
       "file": "\\test\\usuarios.test.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "70baa98a-56b4-401c-ae5c-b7ef9baa2217",
+          "uuid": "30664db0-e40c-4b79-82ee-ad21b566325d",
           "title": "Testes de Login",
-          "fullFile": "C:\\Users\\pulga\\OneDrive\\Documentos\\projetos-automação\\desafio-pgats\\test\\usuarios.test.js",
+          "fullFile": "D:\\projects\\04 - Integração Contínua\\trabalho_conclusao_pipeline\\desafio-pgats\\test\\usuarios.test.js",
           "file": "\\test\\usuarios.test.js",
           "beforeHooks": [],
           "afterHooks": [],
@@ -38,7 +38,7 @@
               "title": "Deve realizar login com sucesso",
               "fullTitle": "Testes de Login Deve realizar login com sucesso",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "const resultado = fazerLogin('joao.silva@teste.com', '123456');\nassert.equal(resultado, 'Login realizado com sucesso!');",
               "err": {},
-              "uuid": "553edbc8-8a6d-4220-ae09-d776c0f48f08",
-              "parentUUID": "70baa98a-56b4-401c-ae5c-b7ef9baa2217",
+              "uuid": "a1ea84dc-ef29-44be-a44d-892b98c5b1af",
+              "parentUUID": "30664db0-e40c-4b79-82ee-ad21b566325d",
               "isHook": false,
               "skipped": false
             },
@@ -65,8 +65,8 @@
               "context": null,
               "code": "assert.throws(\n            function(){ fazerLogin('maria.oliveira@teste.com', '654321') },\n            {\n                message: 'As credenciais estão expiradas!'\n            }\n        );",
               "err": {},
-              "uuid": "7d8a427e-9646-4bc6-854f-019d35e08b9c",
-              "parentUUID": "70baa98a-56b4-401c-ae5c-b7ef9baa2217",
+              "uuid": "e1baeb03-0c0c-41d1-a172-5f0f8b7c4c6f",
+              "parentUUID": "30664db0-e40c-4b79-82ee-ad21b566325d",
               "isHook": false,
               "skipped": false
             },
@@ -83,8 +83,8 @@
               "context": null,
               "code": "assert.throws(\n    function(){ fazerLogin('usuario.inexistente@teste.com', '123456') },\n    {\n        message: 'Usuário não encontrado!'\n    }\n);",
               "err": {},
-              "uuid": "0ec875be-76d4-47fb-8453-d3dfdb45a302",
-              "parentUUID": "70baa98a-56b4-401c-ae5c-b7ef9baa2217",
+              "uuid": "9af97f7c-9aaa-4977-8f74-832d3ac3253e",
+              "parentUUID": "30664db0-e40c-4b79-82ee-ad21b566325d",
               "isHook": false,
               "skipped": false
             },
@@ -101,23 +101,23 @@
               "context": null,
               "code": "assert.throws(\n    function(){ fazerLogin('joao.silva@teste.com', 'senhaIncorreta') },\n    {\n        message: 'Senha incorreta para o usuário encontrado!'\n    }\n);",
               "err": {},
-              "uuid": "6e401796-6ba1-4683-aba2-dc7b31ac7986",
-              "parentUUID": "70baa98a-56b4-401c-ae5c-b7ef9baa2217",
+              "uuid": "db484c47-ce83-42f8-9f91-745123216df6",
+              "parentUUID": "30664db0-e40c-4b79-82ee-ad21b566325d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "553edbc8-8a6d-4220-ae09-d776c0f48f08",
-            "7d8a427e-9646-4bc6-854f-019d35e08b9c",
-            "0ec875be-76d4-47fb-8453-d3dfdb45a302",
-            "6e401796-6ba1-4683-aba2-dc7b31ac7986"
+            "a1ea84dc-ef29-44be-a44d-892b98c5b1af",
+            "e1baeb03-0c0c-41d1-a172-5f0f8b7c4c6f",
+            "9af97f7c-9aaa-4977-8f74-832d3ac3253e",
+            "db484c47-ce83-42f8-9f91-745123216df6"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1,
+          "duration": 2,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -139,7 +139,7 @@
     },
     "mochawesome": {
       "options": {
-        "quiet": false,
+        "quiet": true,
         "reportFilename": "mochawesome",
         "saveHtml": true,
         "saveJson": true,
@@ -150,7 +150,12 @@
       "version": "7.1.4"
     },
     "marge": {
-      "options": null,
+      "options": {
+        "reportDir": "mochawesome-report",
+        "reportFilename": "mochawesome",
+        "quiet": "true",
+        "overwrite": "false"
+      },
       "version": "6.3.2"
     }
   }
