@@ -3,7 +3,7 @@ name: CI - Testes de Login
 # Objetivo: executar testes automatizados via GitHub Actions com múltiplos gatilhos
 on:
   push:
-    branches: [main]
+    branches: [main, master]
   workflow_dispatch: {}
   schedule:
     - cron: '0 8 * * *' # Executa diariamente às 08:00 UTC
