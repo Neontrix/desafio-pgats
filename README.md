@@ -86,8 +86,6 @@ IMPORTANTE: este agendamento é temporário e deve ser revertido para não execu
 - Editar `.github/workflows/ci.yml` e substituir a linha do `cron` por `- cron: '0 8 * * *'` (volta ao agendamento diário às 08:00 UTC), commitar e dar push.
 - Desativar o workflow pela interface do GitHub Actions (Settings → Actions → Workflows → desativar).
 
-Se quiser, eu já faço a reversão automática após confirmar que um run ocorreu — quer que eu aguarde e reverta quando o primeiro run terminar?
-
 ## 📂 Relatório de Teste
 
 Após a execução dos testes, o relatório fica em:
