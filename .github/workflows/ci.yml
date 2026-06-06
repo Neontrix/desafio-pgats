@@ -1,4 +1,5 @@
-name: CI - Testes de Login
+# Nome dinâmico: mostra contexto do gatilho (manual, cron, push)
+name: ${{ github.event_name == 'workflow_dispatch' && 'disparo manual' || github.event_name == 'schedule' && 'disparo por cron' || github.event_name == 'push' && 'disparo por push' || 'CI - Testes de Login' }}
 
 # Objetivo: executar testes automatizados via GitHub Actions com múltiplos gatilhos
 on:
