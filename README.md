@@ -77,13 +77,13 @@ O pipeline CI está definido em `.github/workflows/ci.yml` e inclui:
 4. executa `npm test`
 5. anexa o relatório Mochawesome como artefato
 
-## ⚠️ Teste temporário do Cron
+## ⚠️ Agendamento diário do Cron
 
-Para testar o disparo agendado, o `ci.yml` foi temporariamente ajustado para rodar a cada minuto (`- cron: '*/1 * * * *'`). Isso fará com que a pipeline execute em até 1 minuto.
+O `ci.yml` está configurado para rodar diariamente às 08:00 UTC via cron (`- cron: '0 8 * * *'`).
 
-IMPORTANTE: este agendamento é temporário e deve ser revertido para não executar indefinidamente. Opções para congelar (parar) o cron:
+Se quiser parar o agendamento temporariamente, use uma das opções abaixo:
 
-- Editar `.github/workflows/ci.yml` e substituir a linha do `cron` por `- cron: '0 8 * * *'` (volta ao agendamento diário às 08:00 UTC), commitar e dar push.
+- Editar `.github/workflows/ci.yml` e remover/comentar a seção `schedule` ou substituir o cron por um valor inofensivo.
 - Desativar o workflow pela interface do GitHub Actions (Settings → Actions → Workflows → desativar).
 
 ## 📂 Relatório de Teste

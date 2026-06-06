@@ -7,7 +7,7 @@ on:
   push:
     branches: [main, master]
   schedule:
-    - cron: '*/1 * * * *' # Temporário: executa a cada 1 minuto para teste (reverta após o disparo)
+    - cron: '0 8 * * *' # Executa diariamente às 08:00 UTC
 
 jobs:
   test:
