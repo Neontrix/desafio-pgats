@@ -1,13 +1,7 @@
-# Nome dinâmico: mostra contexto do gatilho (manual, cron, push)
-# Nome fixo do workflow para push/cron
-name: CI - Testes de Login
+name: disparo manual
 
-# Objetivo: executar testes automatizados via GitHub Actions com múltiplos gatilhos
 on:
-  push:
-    branches: [main, master]
-  schedule:
-    - cron: '*/5 * * * *' # Temporário: executa a cada 5 minutos para teste
+  workflow_dispatch: {}
 
 jobs:
   test:
