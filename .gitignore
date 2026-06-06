@@ -1,0 +1,8 @@
+# Node modules
+node_modules/
+
+# Test report output
+mochawesome-report/
+
+# Optional npm cache
+.npm
